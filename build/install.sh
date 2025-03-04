@@ -6,7 +6,7 @@ mkdir -p /opt/micromamba
 cd /opt/micromamba
 curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
 ln -s /opt/micromamba/bin/micromamba /usr/local/bin/micromamba
-/opt/micromamba/bin/micromamba shell init -s bash -p ~/micromamba
+/opt/micromamba/bin/micromamba shell init -s bash ~/micromamba
 /opt/micromamba/bin/micromamba config append channels conda-forge
 eval "$(micromamba shell hook --shell bash)"
 micromamba activate
